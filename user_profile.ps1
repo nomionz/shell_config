@@ -1,12 +1,11 @@
-. $env:USERPROFILE\.config\powershell\user_profile.ps1
-
+# . $env:USERPROFILE\.config\powershell\user_profile.ps1
+# sudo Rename-LocalUser -Name "nomio" -NewName "nomionz"
 
 # set PowerShell to UTF-8
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
 # Prompt
-Import-Module posh-git
-Import-Module oh-my-posh
+# scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 
@@ -15,7 +14,7 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 function Get-ScriptDirectory { Split-Path $MyInvocation.ScriptName }
 $omp_config = Join-Path (Get-ScriptDirectory) 'nomionz.omp.json'
 oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
-Set-PoshPrompt M365Princess
+# Set-PoshPrompt M365Princess
 
 Import-Module -Name Terminal-Icons
 
