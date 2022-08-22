@@ -1,6 +1,7 @@
 # . $env:USERPROFILE\.config\powershell\user_profile.ps1
 # sudo Rename-LocalUser -Name "nomio" -NewName "nomionz"
 https://www.ceos3c.com/wsl-2/windows-terminal-customization-wsl2-deep-dive/#part-1-install-zsh-on-wsl2
+https://terminalroot.com/install-a-ls-command-that-shows-file-icons/
 # set PowerShell to UTF-8
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
