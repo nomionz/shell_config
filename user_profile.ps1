@@ -2,6 +2,7 @@
 # sudo Rename-LocalUser -Name "nomio" -NewName "nomionz"
 https://www.ceos3c.com/wsl-2/windows-terminal-customization-wsl2-deep-dive/#part-1-install-zsh-on-wsl2
 https://terminalroot.com/install-a-ls-command-that-shows-file-icons/
+gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0.4
 # set PowerShell to UTF-8
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
